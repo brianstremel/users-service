@@ -129,6 +129,16 @@ Requiere que la request tenga el header "token" con el token devuelto en la crea
 
 **Auth required** : SI
 
+### Get All Users
+
+**Descripción** : `Devuelve todos los usuarios. Este endpoint se creo con el fin de poder debbugear, por ese motivo no requiere autenticación`
+
+**URL** : `/v1/audit/users`
+
+**Method** : `GET`
+
+**Auth required** : NO
+
 ## Configuraciones
 
 Se pueden modificar las siguientes configuraciones en el archivo application.yml
@@ -142,15 +152,6 @@ password:
   regex: .{10,}
   error: The password should contain at least 10 characters
 ```
-### Get All Users
-
-**Descripción** : `Return all the users (This endpoint is created for debugging, for that reason it does not require authentication`
-
-**URL** : `/v1/audit/users`
-
-**Method** : `GET`
-
-**Auth required** : NO
 
 ## Diagrama de clases
 ![](docs/user-service-uml.jpeg)
