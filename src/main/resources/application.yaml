@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: root
+    password: root
+    driverClassName: org.h2.Driver
+    generate-unique-name: false
+    name: users-service
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+
+
+  jpa:
+    show_sql: true
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console.enabled: true
+jwt:
+  secret: thisIsAPrivateKey
+password:
+  regex: .{10,}
+  error: The password should contain at least 10 characters
