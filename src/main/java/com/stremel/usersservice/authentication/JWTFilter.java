@@ -1,4 +1,4 @@
-package com.stremel.usersservice.controller;
+package com.stremel.usersservice.authentication;
 
 import com.stremel.usersservice.exception.UnauthorizedException;
 import com.stremel.usersservice.service.SecurityService;

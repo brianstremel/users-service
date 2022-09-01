@@ -1,6 +1,6 @@
 package com.stremel.usersservice.configuration;
 
-import com.stremel.usersservice.controller.JWTFilter;
+import com.stremel.usersservice.authentication.JWTFilter;
 import com.stremel.usersservice.service.SecurityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
